@@ -11,6 +11,13 @@
 		63A4BE141E930F6100107E8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63A4BE131E930F6100107E8C /* GoogleService-Info.plist */; };
 		63B2FEFC1EB817410090EA3E /* ViewMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B2FEFB1EB817410090EA3E /* ViewMessageTableViewController.swift */; };
 		63B2FEFE1EB8324D0090EA3E /* GeneralUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B2FEFD1EB8324D0090EA3E /* GeneralUserInfoViewController.swift */; };
+		63B2FF001EB88C1C0090EA3E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B2FEFF1EB88C1C0090EA3E /* LoginViewController.swift */; };
+		63B2FF021EB88D6D0090EA3E /* PostNewQuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B2FF011EB88D6D0090EA3E /* PostNewQuestViewController.swift */; };
+		63B2FF061EB896490090EA3E /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B2FF051EB896490090EA3E /* CurrentUser.swift */; };
+		63B2FF091EB932B10090EA3E /* AllMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B2FF081EB932B10090EA3E /* AllMessageTableViewCell.swift */; };
+		63B2FF0B1EB932C50090EA3E /* PersonalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B2FF0A1EB932C50090EA3E /* PersonalTableViewCell.swift */; };
+		63B2FF0D1EB933CF0090EA3E /* AllMessageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B2FF0C1EB933CF0090EA3E /* AllMessageDetailViewController.swift */; };
+		63B2FF0F1EB9341E0090EA3E /* MyMessageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B2FF0E1EB9341E0090EA3E /* MyMessageDetailViewController.swift */; };
 		63BEAF461E75079D000AEDDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BEAF451E75079D000AEDDF /* AppDelegate.swift */; };
 		63BEAF481E75079D000AEDDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BEAF471E75079D000AEDDF /* ViewController.swift */; };
 		63BEAF4B1E75079D000AEDDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63BEAF491E75079D000AEDDF /* Main.storyboard */; };
@@ -50,6 +57,13 @@
 		63A4BE131E930F6100107E8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		63B2FEFB1EB817410090EA3E /* ViewMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMessageTableViewController.swift; sourceTree = "<group>"; };
 		63B2FEFD1EB8324D0090EA3E /* GeneralUserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUserInfoViewController.swift; sourceTree = "<group>"; };
+		63B2FEFF1EB88C1C0090EA3E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		63B2FF011EB88D6D0090EA3E /* PostNewQuestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostNewQuestViewController.swift; sourceTree = "<group>"; };
+		63B2FF051EB896490090EA3E /* CurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
+		63B2FF081EB932B10090EA3E /* AllMessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllMessageTableViewCell.swift; sourceTree = "<group>"; };
+		63B2FF0A1EB932C50090EA3E /* PersonalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalTableViewCell.swift; sourceTree = "<group>"; };
+		63B2FF0C1EB933CF0090EA3E /* AllMessageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllMessageDetailViewController.swift; sourceTree = "<group>"; };
+		63B2FF0E1EB9341E0090EA3E /* MyMessageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMessageDetailViewController.swift; sourceTree = "<group>"; };
 		63BEAF421E75079D000AEDDF /* GMT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BEAF451E75079D000AEDDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63BEAF471E75079D000AEDDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +129,11 @@
 		63A4BE0F1E92F2CE00107E8C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				63B2FF071EB9328E0090EA3E /* Cells */,
+				63B2FF0E1EB9341E0090EA3E /* MyMessageDetailViewController.swift */,
+				63B2FF0C1EB933CF0090EA3E /* AllMessageDetailViewController.swift */,
+				63B2FF011EB88D6D0090EA3E /* PostNewQuestViewController.swift */,
+				63B2FEFF1EB88C1C0090EA3E /* LoginViewController.swift */,
 				63B2FEFD1EB8324D0090EA3E /* GeneralUserInfoViewController.swift */,
 				63B2FEFB1EB817410090EA3E /* ViewMessageTableViewController.swift */,
 				63A4BE111E92F2F600107E8C /* RegisterViewController.swift */,
@@ -125,8 +144,18 @@
 		63A4BE101E92F2D800107E8C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				63B2FF051EB896490090EA3E /* CurrentUser.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		63B2FF071EB9328E0090EA3E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				63B2FF081EB932B10090EA3E /* AllMessageTableViewCell.swift */,
+				63B2FF0A1EB932C50090EA3E /* PersonalTableViewCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		63BEAF391E75079C000AEDDF = {
@@ -481,12 +510,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63B2FF021EB88D6D0090EA3E /* PostNewQuestViewController.swift in Sources */,
+				63B2FF0F1EB9341E0090EA3E /* MyMessageDetailViewController.swift in Sources */,
+				63B2FF001EB88C1C0090EA3E /* LoginViewController.swift in Sources */,
 				63BEAF481E75079D000AEDDF /* ViewController.swift in Sources */,
 				63BEAF4E1E75079D000AEDDF /* GMT.xcdatamodeld in Sources */,
 				63B2FEFE1EB8324D0090EA3E /* GeneralUserInfoViewController.swift in Sources */,
 				63B2FEFC1EB817410090EA3E /* ViewMessageTableViewController.swift in Sources */,
+				63B2FF0B1EB932C50090EA3E /* PersonalTableViewCell.swift in Sources */,
 				63BEAF461E75079D000AEDDF /* AppDelegate.swift in Sources */,
+				63B2FF061EB896490090EA3E /* CurrentUser.swift in Sources */,
 				63A4BE121E92F2F600107E8C /* RegisterViewController.swift in Sources */,
+				63B2FF091EB932B10090EA3E /* AllMessageTableViewCell.swift in Sources */,
+				63B2FF0D1EB933CF0090EA3E /* AllMessageDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

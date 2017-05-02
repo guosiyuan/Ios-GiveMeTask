@@ -62,8 +62,8 @@ class RegisterViewController: UIViewController {
                     return
                 }
             })
+            self.performSegue(withIdentifier: "ToTabView", sender: nil)
             
-            print(123)
             
         })
         
