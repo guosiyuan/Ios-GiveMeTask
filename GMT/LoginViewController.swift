@@ -7,9 +7,13 @@
 //
 
 import UIKit
-
+import Firebase
 class LoginViewController: UIViewController {
 
+    
+    @IBOutlet weak var email: UITextField!
+    
+    @IBOutlet weak var password: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +24,25 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func LoginPressed(_ sender: UIButton) {
+        guard let email = email.text else {
+            return
+        }
+        guard let pass = password.text else {
+            return
+        }
+        FIRAuth.auth()?.signIn(withEmail: email, password: pass, completion: {(user,error) in
+            if error != nil {
+                print(error)
+                return
+            }
+            self.performSegue(withIdentifier: "ToTabView2", sender: nil)
+        
+        
+        })
+    }
+    
     
 
     /*

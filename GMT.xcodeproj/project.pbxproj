@@ -18,6 +18,11 @@
 		63B2FF0B1EB932C50090EA3E /* PersonalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B2FF0A1EB932C50090EA3E /* PersonalTableViewCell.swift */; };
 		63B2FF0D1EB933CF0090EA3E /* AllMessageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B2FF0C1EB933CF0090EA3E /* AllMessageDetailViewController.swift */; };
 		63B2FF0F1EB9341E0090EA3E /* MyMessageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B2FF0E1EB9341E0090EA3E /* MyMessageDetailViewController.swift */; };
+		63B2FF111EB97D690090EA3E /* DataBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B2FF101EB97D690090EA3E /* DataBridge.swift */; };
+		63B2FF131EB98DB30090EA3E /* ShowMyTable2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B2FF121EB98DB30090EA3E /* ShowMyTable2ViewController.swift */; };
+		63B2FF151EB98E040090EA3E /* All2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B2FF141EB98E040090EA3E /* All2TableViewCell.swift */; };
+		63B2FF171EB9987A0090EA3E /* Info1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B2FF161EB9987A0090EA3E /* Info1ViewController.swift */; };
+		63B2FF191EB99D010090EA3E /* MyStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B2FF181EB99D010090EA3E /* MyStatusViewController.swift */; };
 		63BEAF461E75079D000AEDDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BEAF451E75079D000AEDDF /* AppDelegate.swift */; };
 		63BEAF481E75079D000AEDDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BEAF471E75079D000AEDDF /* ViewController.swift */; };
 		63BEAF4B1E75079D000AEDDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63BEAF491E75079D000AEDDF /* Main.storyboard */; };
@@ -64,6 +69,11 @@
 		63B2FF0A1EB932C50090EA3E /* PersonalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalTableViewCell.swift; sourceTree = "<group>"; };
 		63B2FF0C1EB933CF0090EA3E /* AllMessageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllMessageDetailViewController.swift; sourceTree = "<group>"; };
 		63B2FF0E1EB9341E0090EA3E /* MyMessageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMessageDetailViewController.swift; sourceTree = "<group>"; };
+		63B2FF101EB97D690090EA3E /* DataBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBridge.swift; sourceTree = "<group>"; };
+		63B2FF121EB98DB30090EA3E /* ShowMyTable2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowMyTable2ViewController.swift; sourceTree = "<group>"; };
+		63B2FF141EB98E040090EA3E /* All2TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = All2TableViewCell.swift; sourceTree = "<group>"; };
+		63B2FF161EB9987A0090EA3E /* Info1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info1ViewController.swift; sourceTree = "<group>"; };
+		63B2FF181EB99D010090EA3E /* MyStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStatusViewController.swift; sourceTree = "<group>"; };
 		63BEAF421E75079D000AEDDF /* GMT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BEAF451E75079D000AEDDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63BEAF471E75079D000AEDDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +139,9 @@
 		63A4BE0F1E92F2CE00107E8C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				63B2FF181EB99D010090EA3E /* MyStatusViewController.swift */,
+				63B2FF161EB9987A0090EA3E /* Info1ViewController.swift */,
+				63B2FF121EB98DB30090EA3E /* ShowMyTable2ViewController.swift */,
 				63B2FF071EB9328E0090EA3E /* Cells */,
 				63B2FF0E1EB9341E0090EA3E /* MyMessageDetailViewController.swift */,
 				63B2FF0C1EB933CF0090EA3E /* AllMessageDetailViewController.swift */,
@@ -145,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				63B2FF051EB896490090EA3E /* CurrentUser.swift */,
+				63B2FF101EB97D690090EA3E /* DataBridge.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -152,6 +166,7 @@
 		63B2FF071EB9328E0090EA3E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				63B2FF141EB98E040090EA3E /* All2TableViewCell.swift */,
 				63B2FF081EB932B10090EA3E /* AllMessageTableViewCell.swift */,
 				63B2FF0A1EB932C50090EA3E /* PersonalTableViewCell.swift */,
 			);
@@ -510,16 +525,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63B2FF151EB98E040090EA3E /* All2TableViewCell.swift in Sources */,
 				63B2FF021EB88D6D0090EA3E /* PostNewQuestViewController.swift in Sources */,
+				63B2FF131EB98DB30090EA3E /* ShowMyTable2ViewController.swift in Sources */,
 				63B2FF0F1EB9341E0090EA3E /* MyMessageDetailViewController.swift in Sources */,
 				63B2FF001EB88C1C0090EA3E /* LoginViewController.swift in Sources */,
 				63BEAF481E75079D000AEDDF /* ViewController.swift in Sources */,
 				63BEAF4E1E75079D000AEDDF /* GMT.xcdatamodeld in Sources */,
 				63B2FEFE1EB8324D0090EA3E /* GeneralUserInfoViewController.swift in Sources */,
+				63B2FF111EB97D690090EA3E /* DataBridge.swift in Sources */,
 				63B2FEFC1EB817410090EA3E /* ViewMessageTableViewController.swift in Sources */,
 				63B2FF0B1EB932C50090EA3E /* PersonalTableViewCell.swift in Sources */,
+				63B2FF171EB9987A0090EA3E /* Info1ViewController.swift in Sources */,
 				63BEAF461E75079D000AEDDF /* AppDelegate.swift in Sources */,
 				63B2FF061EB896490090EA3E /* CurrentUser.swift in Sources */,
+				63B2FF191EB99D010090EA3E /* MyStatusViewController.swift in Sources */,
 				63A4BE121E92F2F600107E8C /* RegisterViewController.swift in Sources */,
 				63B2FF091EB932B10090EA3E /* AllMessageTableViewCell.swift in Sources */,
 				63B2FF0D1EB933CF0090EA3E /* AllMessageDetailViewController.swift in Sources */,

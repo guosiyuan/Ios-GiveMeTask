@@ -1,5 +1,5 @@
 //
-//  PersonalTableViewCell.swift
+//  All2TableViewCell.swift
 //  GMT
 //
 //  Created by siyuan on 5/2/17.
@@ -8,9 +8,11 @@
 
 import UIKit
 
-class PersonalTableViewCell: UITableViewCell {
+class All2TableViewCell: UITableViewCell {
 
-    @IBOutlet weak var GeneralMessage: UILabel!
+    @IBOutlet weak var MEssage: UILabel!
+    @IBOutlet weak var Price: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -9,18 +9,43 @@
 import UIKit
 import Firebase
 class ViewMessageTableViewController: UITableViewController {
-
+    @IBOutlet var PostTableView: UITableView!
+    
+    var allPostsArray: [[String]] = []
+    var allSelfPostsArray: [[String]] = []
     override func viewDidLoad() {
         super.viewDidLoad()
+        PostTableView.delegate = self
+        PostTableView.dataSource = self
+
         let ref = FIRDatabase.database().reference(fromURL: "https://gmt-siyuan.firebaseio.com/")
-        ref.updateChildValues(["SomeValue":123123])
+        //ref.updateChildValues(["SomeValue":123123])
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        updateValue()
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        self.updateValue()
+    }
+    let curUser = CurrentUser()
+    func updateValue(){
+        curUser.upDateAllPostArray()
+        curUser.upDateSelfPostArray()
+        allPostsArray = curUser.AllPosts
+        allSelfPostsArray = curUser.AllSelfPosts
+        print("checkp1")
+        print(allPostsArray.count)
+        if (allPostsArray.count > 2){
+            print(allPostsArray)
+        }
+        tableView.reloadData()
+        //self.tableView.reloadData()
+        PostTableView.reloadData()
+        //self.tableView.reloadData()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -35,18 +60,28 @@ class ViewMessageTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        return allPostsArray.count
     }
-
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath)
+        if (cell != nil){
+            print("get your cell")
+            print(cell.reuseIdentifier)
 
+        }
+        let thecell = cell as! AllMessageTableViewCell
+        thecell.MessagePoster.text = allPostsArray[indexPath.row][1]
+        thecell.Price.text = allPostsArray[indexPath.row][2]
         // Configure the cell...
 
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+    }
 
     /*
     // Override to support conditional editing of the table view.

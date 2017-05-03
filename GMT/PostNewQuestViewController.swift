@@ -14,23 +14,45 @@ class PostNewQuestViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    let curUser = CurrentUser()
+    //let curUser = CurrentUser()
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        ConfirmPosted.text = "What's your request?"
         // Dispose of any resources that can be recreated.
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        ConfirmPosted.text = "What's your request?"
+
     }
     @IBOutlet weak var NewRequestText: UITextField!
     
     @IBOutlet weak var Price: UITextField!
 
     @IBOutlet weak var Contact: UITextField!
+    
+    @IBOutlet weak var ConfirmPosted: UILabel!
     @IBAction func HandleNewPost(_ sender: UIButton) {
         
-        curUser.addNewPost(Message: NewRequestText.text!, Price: Price.text!, Contact: Contact.text!, Active: "T")
-        curUser.upDateAllPostArray()
-        for i in (curUser.AllPosts){
-            print(i)
-        }
+        addNewPost(Message: NewRequestText.text!, Price: Price.text!, Contact: Contact.text!)
+
+        //curUser.upDateAllPostArray()
+        //curUser.upDateSelfPostArray()
+        
+        ConfirmPosted.text = "You Just Posted A new Thing"
+        NewRequestText.text = ""
+        Price.text = ""
+        Contact.text = ""
+        
+        print("ahahah")
+//        for i in (curUser.AllPosts){
+//            
+//            print(i)
+//            
+//        }
+//        print("blabla")
+//        for i in (curUser.AllSelfPosts){
+//            print(i)
+//        }
         
     
         
